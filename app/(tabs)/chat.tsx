@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { ActivityIndicator, Button, FlatList,StyleSheet, TextInput, Text, View, ViewStyle} from "react-native";
-import { connectSocket } from "../src/socket";
+import { connectSocket } from "../../src/socket";
 import { Socket } from "socket.io-client";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { ChatMessage } from "../src/models/chatMessage";
+import { ChatMessage } from "../../src/models/chatMessage";
 import { useLocalSearchParams } from "expo-router";
 
 type MessageBubbleProps = {
